@@ -97,6 +97,7 @@ console.log(!(3 > 6 || 5 > 2)&&(6 >= 6 || 5 > 2))
 const color= false
 color ? console.log("Estaa en verde") : console.log("Esta en rojo")
 
-// 10. Combina operadores aritméticos, de comparáción y lógicas
+// 10. Combina operadores aritméticos, de comparáción y lógicas.
+
 
 

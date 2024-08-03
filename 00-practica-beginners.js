@@ -1,3 +1,9 @@
+/*
+Clase 2 en vídeo | 17/07/2024
+Tipos de datos, operadores y strings
+https://www.twitch.tv/videos/2200149072?t=00h08m02s
+*/
+
 // 1. Escribe un comentario en una línea
 
 //Esto es un comentario en una linea
@@ -107,5 +113,6 @@ id1 = Symbol(11111)
 console.log (typeof(id1))
 es una constante no cambia
 */
+
 
 
