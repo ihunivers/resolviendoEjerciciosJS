@@ -7,7 +7,7 @@ https://www.twitch.tv/videos/2206228701?t=00h16m02s
 // if/else/else if/ternaria
 
 // 1. Imprime por consola tu nombre si una variable toma su valor
-
+console.log("---------------")
 let alias = "magia"
 
 if (alias == "magia") {
@@ -15,7 +15,7 @@ if (alias == "magia") {
 }
 
 // 2. Imprime por consola un mensaje si el usuario y contraseña concide con unos establecidos
-
+console.log("---------------")
 let usuario = "tom"
 let contraseña = "jerry"
 
@@ -27,7 +27,7 @@ if (usuario == "tom" && contraseña == "jerry") {
 
 
 // 3. Verifica si un número es positivo, negativo o cero e imprime un mensaje
-
+console.log("---------------")
 const prompt = require('prompt-sync')();
     /*instalé npm unstall prompt-sync para poder ejecutar prompt por consola vscode, 
     es necesario llamarlo con require('prompt-sync')() */
@@ -46,6 +46,7 @@ if (numero > 0){
 
 
 // 4. Verifica si una persona puede votar o no (mayor o igual a 18) e indica cuántos años le faltan
+console.log("---------------")
 
 let edad = Number(prompt("Escribe tu edad: "))
 
@@ -57,12 +58,13 @@ if (edad >= 18){
 
 // 5. Usa el operador ternario para asignar el valor "adulto" o "menor" a una variable
 //    dependiendo de la edad 
+console.log("---------------")
 let age =  Number(prompt("Escribe tu edad nuevamente: "))
 let etapa = age >= 18 ? "Eres mayor de edad" : "eres menor de edad"
 console.log(etapa)
 
 // 6. Muestra en que estación del año nos encontramos dependiendo del valor de una variable "mes"
-
+console.log("---------------")
 let mes =  prompt("Escribe el mes: ").toLocaleLowerCase()
 let dia =  Number(prompt("Escribe el numero del dia del mes que te interesa saber: "))
 let mesguardado = mes
@@ -79,7 +81,7 @@ if ((mes == "marzo" && dia >= 20 && dia <= 31)
 }else if((mes == "junio" && dia >= 21 && dia <= 30) 
     || (mes == "julio" && dia >= 1 && dia <= 31 )
     || (mes == "agosto" && dia >= 1 && dia <= 31)
-    || (mes == "septiembre" && dia >= 1 && dia <= 22)
+    || (mes == "septiembre" && dia >= 1 && dia <= 21)
 ){
     console.log(`El dia ${diaguardado} del mes de ${mesguardado} es verano`) 
 
@@ -102,6 +104,7 @@ if ((mes == "marzo" && dia >= 20 && dia <= 31)
 
 
 // 7. Muestra el número de días que tiene un mes dependiendo de la variable del ejercicio anterior
+console.log("---------------")
 
 if (mesguardado == "enero" || mesguardado == "abril"|| mesguardado == "junio" || mesguardado == "septiembre" || mesguardado =="noviembre" ){
     console.log(`el mes de ${mesguardado} tiene 30 dias` ) 
@@ -118,6 +121,7 @@ if (mesguardado == "enero" || mesguardado == "abril"|| mesguardado == "junio" ||
 // switch
 
 // 8. Usa un switch para imprimir un mensaje de saludo diferente dependiendo del idioma
+console.log("---------------")
 
 let idioma = Number(prompt("Cada idioma esta enumero, elije un numero del 0 al 9: "))
 let traduce
@@ -170,12 +174,101 @@ console.log(traduce)
 
 
 // 9. Usa un switch para hacer de nuevo el ejercicio 6
+console.log("---------------")
+
+let estacion
 
 
-switch(estacion){
-    case 
+switch(true){
+    case mes == "marzo" && dia >= 20 && dia <= 31:
+        estacion = `el mes de ${mes} es primavera`
+        break 
+    case mes == "abril" && dia >= 1 && dia <= 30:
+        estacion = `el mes de ${mes} es primavera`
+        break
+    case mes == "mayo" && dia >= 1 && dia <= 31:
+        estacion = `el mes de ${mes} es primavera`
+        break
+    case mes == "junio" && dia >= 1 && dia <= 20: 
+        estacion = `el mes de ${mes} es primavera`
+        break
+    
+
+    case mes == "junio" && dia >= 21 && dia <= 30:
+        estacion = `el mes de ${mes} es verano`
+        break
+    case mes == "julio" && dia >= 1 && dia <= 31:
+        estacion = `el mes de ${mes} es verano`
+        break
+    case mes == "agosto" && dia >= 1 && dia <= 31:
+        estacion = `el mes de ${mes} es verano`
+        break
+    case "septiempre" && dia >= 1 && dia <= 21: 
+        estacion = `el mes de ${mes} es verano`
+        break  
+        
+    case mes == "septiembre" && dia >= 22 && dia <= 30:
+        estacion = `el mes de ${mes} es otoño`
+        break
+    case mes == "aoctubre" && dia >= 1 && dia <= 31:
+        estacion = `el mes de ${mes} es otoño`
+        break
+    case "noviembre"&& dia >= 1 && dia <= 30:
+        estacion = `el mes de ${mes} es otoño`
+        break
+    case mes == "diciembre" && dia >= 1 && dia <= 20: 
+        estacion =  `el mes de ${mes} es otoño`
+        break   
+
+    case mes == "diciembre" && dia >= 21 && dia <= 31:
+        estacion =  `el mes de ${mes} es invierno`
+        break
+    case mes == "enero" && dia >= 1 && dia <= 30:
+        estacion =  `el mes de ${mes} es invierno`
+        break
+    case mes == "febrero" && dia >= 1 && dia <= 29:
+        estacion =  `el mes de ${mes} es invierno`
+        break
+    case mes == "marzo" && dia >= 1 && dia <= 19: 
+        estacion = `el mes de ${mes} es invierno`
+        break  
+
+
+    default:
+        estacion = "No escribiste el mes y su numero de dia de la forma adecuada, intentalo denuevo"      
+
 }
+console.log(estacion )
 
 
 
 // 10. Usa un switch para hacer de nuevo el ejercicio 7
+console.log("---------------")
+
+let dias
+switch(mes){
+    case "enero":
+    case "marzo":
+    case "mayo":
+    case "julio":
+    case "agosto":
+    case "octubre":
+    case "diciembre":
+        dias =`${mesguardado} tiene 31 dias`
+        break
+
+    case "abril":
+    case "junio":
+    case "septiembre":
+    case "noviembre":
+        dias = `${mesguardado} tiene 30 dias`   
+        break
+
+    case "febrero": 
+        dias = `${mesguardado} tiene 28 dias ó 29 si es bisiesto`
+        break
+
+    default:
+        dias = "No escribiste el mes y su numero de dia de la forma adecuada, intentalo denuevo"      
+
+}console.log(dias)
