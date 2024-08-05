@@ -77,7 +77,7 @@ console.log(mapmes.has(5))
 
 // 9. Añade al mapa una clave con un array que almacene los meses de verano
 console.log("------------9--------------")
-mapmes.set(13 , ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"] )
+mapmes.set(13 , ["junio","julio","agosto","septiembre"] )
 console.log(mapmes)
 
 // 10. Crea un Array, transfórmalo a un Set y almacénalo en un Map
@@ -90,7 +90,7 @@ console.log(nuevoset)
 console.log(typeof(nuevoset))
 
 
-mapmes.set(14, nuevoset)
+mapmes.set(14, nuevoset)//guardados en el anterior map llamado mapmes
 console.log(mapmes)
 
 //opcional convertirlo en array
