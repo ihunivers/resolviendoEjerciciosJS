@@ -88,7 +88,40 @@ for(let por = 0;  por <= 10; por++){
 
 
 // 8. Usa un bucle para invertir una cadena de texto
+console.log("---------8--------")
+let cadena = "dale la vuelta"
+let cadenadereves = "", contador = cadena.length -1
+
+while(contador >= 0){
+    cadenadereves = cadenadereves + cadena[contador]
+    contador = contador - 1
+    
+
+}console.log(cadenadereves)
+
 
 // 9. Usa un bucle para generar los primeros 10 números de la secuencia de Fibonacci
+console.log("---------9--------")
+/*Fobonacci
+La sucesión comienza con dos números naturales (dependiendo de la referencia, con 0 y 1 en ciertos casos, otras inician con 1 y 1) y a partir de estos, «cada término es la suma de los dos anteriores»
+
+0,1,1,2,3,5,8,13..
+*/
+function fibo(maximo){
+
+    const numfibo = [0,1]
+
+    for(let f = 2; f <= maximo; f++){
+        numfibo.push(numfibo[f - 1] + numfibo[f-2])
+        
+    }
+
+    return numfibo
+}
+
+const numerosmaximosarrojar = fibo(11)
+console.log(numerosmaximosarrojar)
+
+
 
 // 10. Dado un array de números, usa un bucle para crear un nuevo array que contenga solo los números mayores a 10
