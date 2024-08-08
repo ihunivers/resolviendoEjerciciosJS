@@ -107,6 +107,8 @@ La sucesión comienza con dos números naturales (dependiendo de la referencia, 
 
 0,1,1,2,3,5,8,13..
 */
+
+console.log("---------10--------")
 function fibo(maximo){
 
     const numfibo = [0,1]
@@ -125,3 +127,17 @@ console.log(numerosmaximosarrojar)
 
 
 // 10. Dado un array de números, usa un bucle para crear un nuevo array que contenga solo los números mayores a 10
+
+console.log("---------11--------")
+let ejer = [6,37,2,18,9,46,5,6,3,8,77,35,1,80]
+let nuevofilt 
+
+    for(let m = 0; m < ejer.length;m++){
+        if (ejer[m] > 10){
+            nuevofilt = ejer[m]
+
+            console.log(nuevofilt)
+        } 
+    
+
+}
