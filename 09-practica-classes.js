@@ -180,8 +180,8 @@ console.log(persona2.name)
 console.log("-------10--------")
 class Cumpleaños extends Premium{
 
-    constructor(dni,fecha){
-        super()
+    constructor(entrada,dni,fecha){
+        super(entrada)
         this.dni = dni
         this.fecha = fecha
     }
